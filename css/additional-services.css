@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body .content {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    flex-direction: column;
+}
+@media (min-width: 801px) {
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+}
+.content img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.want-to-travel {
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 50px;
+    margin: 0 100px 0 100px;
+    align-items: center;
+}
+#head-text {
+    color: #f1c324;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Dosis, sans-serif;
+    text-align: center;
+    }
+#firstline {
+    color: #6e6e6e;
+    font-size: 19px;
+    font-weight: 500;     
+    font-family: Dosis, sans-serif;
+    text-align: center;
+   }
+
+.grey-box {
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 19px 21px 19px 21px;
+    margin: 12px 0px 0px 0px;
+    width: 307px;
+    height: 14px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    text-align: left;
+   }
+.yellow-box {
+    background-color:yellow;
+    padding: 19px 21px 19px 21px;
+    margin: 12px 0px 0px 0px;
+    width: 307px;
+    height: 14px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    text-align: center; 
+}
+body .white-part {
+    background-image: url(../img/bkgd-fon-addservices.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media (min-width: 640px) {
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (min-width: 801px) {
+
+    .services {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+@media (min-width: 980px) {
+
+    .services {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.services article {
+    padding: 10px;
+    margin: 0 0 5 0;
+}
+.services article img {
+    display: block;
+    width: 100%;
+}
+#additional {
+    padding: 100px;
+    margin: -15px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #141414;    
+    font-family: Dosis, "sans-serif";  
+}
+#name {
+    font-size: 25px;
+    font-weight: 700;
+    color: #141414;
+    text-align: center;
+    font-family: Dosis, "sans-serif"; 
+}
+#card {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #6e6e6e;    
+    font-family: Roboto, "sans-serif"; 
+}

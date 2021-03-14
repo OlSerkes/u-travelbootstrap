@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-body {
-    max-width: 980px;
-    margin: auto;
-}
+
 :root {
     scroll-behavior: smooth;
 }
@@ -11,11 +8,11 @@ header .tours-logo {
     background-image: url(../img/bcgd-chornobyl.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 320px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 640px) {
+@media (min-width: 620px) {
 
     .main-line {
         display: grid;
@@ -31,9 +28,10 @@ header .tours-logo {
     }
 
 }
-.main-line {
-    display: flex;
+.main-line {  
     justify-content: space-around;
+    align-items: center;
+    text-align: center;     
 }
 .header {
     display: flex;
@@ -63,30 +61,13 @@ header .tours-logo {
     font-family: Roboto, sans-serif; 
 }
 header .navbar-nav {
-    list-style-type: none;
     display: flex;
     justify-content: space-around;
     flex: 1;
     align-items: center;
     }
-header .nav-link {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    text-decoration: none;    
-}
-header .dropdown-menu li{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    text-decoration: none; 
-}
 .banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-width: 25px;
-    border-color: #ffffff;
     }

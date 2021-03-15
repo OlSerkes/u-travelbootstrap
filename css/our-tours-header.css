@@ -51,6 +51,8 @@ header .tours-logo {
     margin-top: 70px;
     }
 .logo {
+    width: 100px;
+    height: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
 }

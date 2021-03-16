@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+
 :root {
     scroll-behavior: smooth;
+    --itinerary-text-color:#FFFFFF;
 }
+
 header .tours-logo {
     background-image: url(../img/bcgd-chornobyl.jpg);
     background-size: cover;
@@ -12,64 +19,111 @@ header .tours-logo {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 620px) {
 
+@media (min-width: 620px) {
     .main-line {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
 }
-@media (min-width: 801px) {
 
-     .main-line {
+@media (min-width: 801px) {
+    .main-line {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
 
-}
-.main-line {  
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;     
-}
-.header {
+.main-line {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    }
+
+.header-tourslogo {
     font-size: 25px;
     font-weight: 700;
-    color: #fff;    
+    color: #fff;
     font-family: Dosis, sans-serif;
-    margin-top: 70px;
     }
-.header-two {
-    font-size: 19px;
-    font-weight: 500;
-    color: #fff;    
-    font-family: Dosis, sans-serif;
-    position: relative;
-    margin-top: 70px;
-    }
-.logo {
+.logo img{
     width: 100px;
     height: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
-.navbar-nav {
+.header-tourslogotwo {
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    font-family: Dosis, sans-serif;
+    }
+header .container-fluid {
     color: #f1c324;
     font-size: 16px;
     font-weight: 700;
-    font-family: Roboto, sans-serif; 
+    font-family: Roboto, sans-serif;
 }
+
 header .navbar-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex: 1;
-    align-items: center;
-    }
+}
+
 .banner {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Sasha second page end */
+
+/* Tanya Tkach second page start*/
+
+.logo-page-two {
+    color: yellow;
+    font-size: 40px;
+    text-align: center;
+}
+
+.text-page-two {
+    text-align: center;
+    color: white;
+}
+
+.column-page-two {
+    color: white;
+    font-size: 20px;
+}
+
+.yellow-text {
+    color: yellow;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+@media (min-width: 420px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr; 
     }
+}
+@media (min-width: 520px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+@media (min-width: 620px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+    }
+}
+@media (min-width: 720px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    }
+}

@@ -1,6 +1,6 @@
-const formadditional = document.getElementById('formadditional');
-const name = document.getElementById('name');
-const phonenumber = document.getElementById('phone-number');
+const formadditional = document.getElementByld('formadditional');
+const name = document.getElementByld('name');
+const phonenumber = document.getElementByld('phone-number');
 const email = document.getElementByld('email');
 
 //Show input error message
@@ -55,5 +55,20 @@ function checkLength(input, min, max) {
             showSucces(input); 
          }
     }
-    //
+    //Get fieldname
+function getFieldName(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
+// Event listeners
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  if(!checkRequired([name, phone-number, email])){
+    checkLength(name, 3, 15);
+    checkLength(phone-number, 10, 19);
+    checkEmail(email);
+    }
+
+});
 

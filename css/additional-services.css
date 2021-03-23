@@ -53,20 +53,64 @@
          align-items: center;
          flex: 1;
     }
-    .form-control {
-        box-sizing: border-box;
-    }
-}        
+    
+}   
 .grey-box-contacts {
-    background-color:rgba(255, 255, 255, 0.1);
-    padding: 19px 21px 19px 21px;
-    margin: auto;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 400;
-    font-family: Roboto, sans-serif;
-    text-align: left; 
-    }
+background-color:rgba(255, 255, 255, 0.1);
+color: #ffffff;
+font-size: 12px;
+font-weight: 400;
+font-family: Roboto, sans-serif;
+text-align: left;
+}
+.form-control {
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+.form button {
+  cursor: pointer;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
 @media (min-width: 610px) {
     
      .yellow-box-button {
@@ -80,18 +124,12 @@
 }        
 .yellow-box-button {
     background-color:yellow;
-    padding: 19px 21px 19px 21px;
-    margin: auto;
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;
     font-family: Roboto, sans-serif;
     text-align: center; 
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: space-around;
-}
+    }
 .white-part-additional {
     background-image: url(../img/bkgd-fon-addservices.jpg);
     background-size: cover;

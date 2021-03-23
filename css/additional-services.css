@@ -7,7 +7,7 @@
     background-color: black;
     background-size: cover;
     background-position: center;
-    min-height: 400px;
+    min-height: 350px;
     flex-direction: column;
 }
 @media (min-width: 801px) {
@@ -53,8 +53,10 @@
          align-items: center;
          flex: 1;
     }
-    
-}         
+    .form-control {
+        box-sizing: border-box;
+    }
+}        
 .grey-box-contacts {
     background-color:rgba(255, 255, 255, 0.1);
     padding: 19px 21px 19px 21px;

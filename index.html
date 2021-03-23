@@ -15,18 +15,26 @@
    <div class="wanttotravel-lviv">
             <img class="largeimage-lviv" src="img/lviv-wanttotravel.jpg" alt="Lviv square Rynok">
             <div class="want-to-travel">
+                 <form method="POST" action="https://formspree.io/f/moqpozgq"></form>
                 <h5 id="head-text-additional">Want to travel around Ukraine with us?</h5>
-                <form method="POST" action="https://formspree.io/f/moqpozgq">
+                <div class="formadditional">
                     <p id="firstline-contacts">Leave your contacts and we will offer you the best tours!</p>
                     <br>
-                    <input class="grey-box-contacts" name="name" type="text" placeholder="Name" required>
-                    <br>
-                    <input class="grey-box-contacts" name="phone-number" type="text" placeholder="Phone number" required>
-                    <br>
-                    <input class="grey-box-contacts" name="email" type="text" placeholder="Email" required>
-                    <br>
+                    <div class="form-control">
+                    <input class="grey-box-contacts" name="name" type="text" placeholder="Name">
+                    <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                    <input class="grey-box-contacts" id="phone-number" type="text" placeholder="Phone number">
+                    <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                    <input class="grey-box-contacts" id="email" type="text" placeholder="Email">
+                    <small>Error message</small>
+                    </div>
                     <button class="yellow-box-button" type="submit">SEND</button>
                 </form>
+                </div>
             </div>
         </div>
         <div class="white-part-additional">
@@ -67,6 +75,7 @@
                 </article>
             </div>
         </div>
+        <script src="js/additional-services.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

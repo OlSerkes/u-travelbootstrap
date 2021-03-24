@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
     scroll-behavior: smooth;
-    --success-color: #021b40;
+    --success-color: #23be04;
     --error-color: #b50c04
 }
 .wanttotravel-lviv {
@@ -56,16 +56,19 @@
          justify-content: space-around;         
          align-items: center;
          flex: 1;
-    }
+     }
     
 }   
 .grey-box-contacts {
 background-color:rgba(255, 255, 255, 0.1);
-color: #ffffff;
+color: #242222;
 font-size: 12px;
 font-weight: 400;
 font-family: Roboto, sans-serif;
 text-align: left;
+}
+.formadd {
+    padding: 30px 40px;
 }
 .form-control {
         box-sizing: border-box;
@@ -106,15 +109,6 @@ text-align: left;
 .form-control.error small {
   visibility: visible;
 }
-.form button {
-  cursor: pointer;
-  border: 2px solid #3498db;
-  border-radius: 4px;
-  padding: 10px;
-  margin-top: 20px;
-  width: 100%;
-}
-
 @media (min-width: 610px) {
     
      .yellow-box-button {
@@ -123,17 +117,24 @@ text-align: left;
          justify-content: space-around;         
          align-items: center;
          flex: 1;
-    }
+     }
     
-}        
-.yellow-box-button {
+}   
+
+.formadd button {
+    cursor: pointer;
     background-color:yellow;
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;
     font-family: Roboto, sans-serif;
     text-align: center; 
-    }
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
 /* Form part end*/
 
 .white-part-additional {

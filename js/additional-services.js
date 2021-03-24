@@ -1,6 +1,6 @@
 const formadd = document.getElementById('formadd');
 const name = document.getElementById('name');
-const phoneNumber = document.getElementById('phone-number');
+const phoneNumber = document.getElementById('phonenumber');
 const email = document.getElementById('email');
 
 // Show input error message
@@ -60,12 +60,12 @@ function checkLength(input, min, max) {
 }
 
 // Accept message
-form.addEventListener('submit', function(e) {
+formadd.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  if(!checkRequired([name, phone-number, email])){
+  if(!checkRequired([name, phonenumber, email])){
     checkLength(name, 3, 15);
-    checkLength(phone-number, 10, 19);
+    checkLength(phonenumber, 10, 19);
     checkEmail(email);
     }
 

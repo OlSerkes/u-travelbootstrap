@@ -1,6 +1,6 @@
-const formadditional = document.getElementById('formadditional');
+const formadd = document.getElementById('formadd');
 const name = document.getElementById('name');
-const phonenumber = document.getElementById('phone-number');
+const phoneNumber = document.getElementById('phone-number');
 const email = document.getElementById('email');
 
 // Show input error message
@@ -59,7 +59,7 @@ function checkLength(input, min, max) {
   }
 }
 
-// Event listeners
+// Accept message
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 

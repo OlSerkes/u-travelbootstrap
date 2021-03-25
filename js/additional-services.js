@@ -1,7 +1,7 @@
-const formadd = document.querySelector('formadd');
-const name = document.querySelector('name');
-const phoneNumber = document.querySelector('phonenumber');
-const email = document.querySelector('email');
+const formadd = document.querySelector('#formadd');
+const name = document.querySelector('#name');
+const phoneNumber = document.querySelector('#phonenumber');
+const email = document.querySelector('#email');
 
 // Show input error message
 function showError(input, message) {
@@ -18,9 +18,9 @@ function showSuccess(input) {
 }
 
 // Check phone-number is valid
-function phonenumber(input) {
-  const phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-  if(input.value.match(phoneno)) {
+function checkPhonenumber(input) {
+  const phoneno = /^(\+{0,})(\d{0,})([(]{1}\d{1,4}[)]{0,}){0,}(\s?\d+|\+\d{2,3}\s{1}\d+|\d+){1}[\s|-]?\d+([\s|-]?\d+){1,2}(\s){0,}$/gm;
+    if(input.value.match(phoneno)) {
     showSuccess(input);
   }
   else {
@@ -69,10 +69,11 @@ function checkLength(input, min, max) {
     showSuccess(input);
   }
 }
+
 //Get field name
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-}
+ }
 
 // Accept message
 formadd.addEventListener('submit', function(e) {
@@ -80,7 +81,7 @@ formadd.addEventListener('submit', function(e) {
 
   if(!checkRequired([name, phonenumber, email])){
     checkLength(name, 3, 15);
-    checkLength(phonenumber, 10, 19);
+    checkPhonenumber(phonenumber);
     checkEmail(email);
     }
 

@@ -3,7 +3,7 @@
 :root {
     scroll-behavior: smooth;
     --success-color: #23be04;
-    --error-color: #b50c04
+    --error-color: #f50a0a;
 }
 .wanttotravel-lviv {
     background-color: black;
@@ -39,6 +39,15 @@
     font-family: Dosis, sans-serif;
     text-align: center;
     }
+
+.w-text-additional {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 35px;
+    text-align: center;
+    font-family: Dosis, sans-serif;
+}
 #firstline-contacts {
     color: #6e6e6e;
     font-size: 19px;
@@ -63,17 +72,19 @@
     padding: 30px 40px;
 }
 .form-control {
-        box-sizing: border-box;
-        margin-bottom: 10px;
-        padding-bottom: 20px;
+        background-color:rgba(255, 255, 255, 0.1);                
+        margin-bottom: 15px;
+        padding-bottom: 15px;
         position: relative;
+        
 }
-.form-control input {
-  border: 2px solid #f0f0f0;
+.form-control input {  
   display: block;
-  width: 100%;
-  padding: 10px;
+  width: 100%;  
   font-size: 14px;
+  font-weight: 400;
+  color: #242222;
+  font-family: Roboto, sans-serif;
 }
 
 .form-control input:focus {
@@ -122,8 +133,8 @@
     margin-top: 20px;
     width: 100%;
     }
-.yellow-box-button :hover {
-    background-color: rgb(43, 172, 231);
+.yellow-box-button :hover {    
+    background-color: rgb(13, 172, 231);
     cursor: pointer;
 }
 /* Form part end*/
@@ -137,6 +148,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.w-text-additionals {
+    color: rgb(13, 172, 231);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 35px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: Dosis, sans-serif;
 }
 @media (min-width: 640px) {
 
@@ -168,8 +188,7 @@
     width: 100%;
 }
 #additionalservices {
-    padding: 100px;
-    margin: -15px;
+    padding-top: 50px;      
     font-size: 48px;
     font-weight: 700;
     line-height: 57px;

@@ -70,13 +70,19 @@ header .navbar-nav {
     flex: 1;
 }
 
-.banner {
+@media (min-width: 620px) {
+    .banner {
     display: grid;
     grid-template-colums: 1fr 1fr;
+    }
+    
+.banner {
     justify-content: center;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
     margin-bottom: 50px;
-}
-
+    }
 
 /* Sasha second page end */
 

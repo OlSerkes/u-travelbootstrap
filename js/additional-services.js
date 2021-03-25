@@ -1,7 +1,7 @@
-const formadd = document.getElementById('formadd');
-const name = document.getElementById('name');
-const phoneNumber = document.getElementById('phonenumber');
-const email = document.getElementById('email');
+const formadd = document.querySelector('formadd');
+const name = document.querySelector('name');
+const phoneNumber = document.querySelector('phonenumber');
+const email = document.querySelector('email');
 
 // Show input error message
 function showError(input, message) {

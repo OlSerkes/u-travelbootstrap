@@ -18,7 +18,7 @@ header .tours-logo {
     min-height: 200px;
     display: flex;
     flex-direction: column;
-}
+    }
 
 @media (min-width: 620px) {
     .main-line {
@@ -36,7 +36,7 @@ header .tours-logo {
 
 .main-line {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5px;
     }
@@ -72,68 +72,18 @@ header .navbar-nav {
 
 @media (min-width: 620px) {
     .banner {
-    display: grid;
-    grid-template-colums: 1fr 1fr;
+    display: flex;
     }
+}
     
 .banner {
     justify-content: center;
     }
 #banner {
     border-width: 10px;
-    border-color: white;
+    border-color: #fff;
     border-style: solid;
     margin-bottom: 50px;
     }
 
 /* Sasha second page end */
-
-/* Tanya Tkach second page start*/
-
-.logo-page-two {
-    color: yellow;
-    font-size: 40px;
-    text-align: center;
-}
-
-.text-page-two {
-    text-align: center;
-    color: white;
-}
-
-.column-page-two {
-    color: white;
-    font-size: 20px;
-}
-
-.yellow-text {
-    color: yellow;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-.product-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
-}
-@media (min-width: 420px) {
-    .product-list {
-        grid-template-columns: 1fr 1fr; 
-    }
-}
-@media (min-width: 520px) {
-    .product-list {
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-}
-@media (min-width: 620px) {
-    .product-list {
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-    }
-}
-@media (min-width: 720px) {
-    .product-list {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    }
-}

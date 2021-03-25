@@ -50,7 +50,7 @@
 /* Form part */
 @media (min-width: 610px) {
     
-     .grey-box-contacts {
+     .form-control {
          
          display: flex;
          justify-content: space-around;         
@@ -59,14 +59,6 @@
      }
     
 }   
-.grey-box-contacts {
-background-color:rgba(255, 255, 255, 0.1);
-color: #242222;
-font-size: 12px;
-font-weight: 400;
-font-family: Roboto, sans-serif;
-text-align: left;
-}
 .formadd {
     padding: 30px 40px;
 }
@@ -78,7 +70,6 @@ text-align: left;
 }
 .form-control input {
   border: 2px solid #f0f0f0;
-  border-radius: 4px;
   display: block;
   width: 100%;
   padding: 10px;
@@ -87,7 +78,6 @@ text-align: left;
 
 .form-control input:focus {
   outline: 0;
-  border-color: #777;
 }
 
 .form-control.success input {
@@ -111,7 +101,7 @@ text-align: left;
 }
 @media (min-width: 610px) {
     
-     .yellow-box-button {
+     .formadd button {
          
          display: flex;
          justify-content: space-around;         
@@ -122,18 +112,19 @@ text-align: left;
 }   
 
 .formadd button {
-    cursor: pointer;
-    background-color:yellow;
     color: #ffffff;
+    background-color:yellow;    
     font-size: 12px;
     font-weight: 700;
     font-family: Roboto, sans-serif;
     text-align: center; 
-    border: 2px solid #3498db;
-    border-radius: 4px;
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+    }
+.yellow-box-button :hover {
+    background-color: rgb(43, 172, 231);
+    cursor: pointer;
 }
 /* Form part end*/
 

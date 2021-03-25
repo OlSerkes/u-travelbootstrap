@@ -71,10 +71,12 @@ header .navbar-nav {
 }
 
 .banner {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-colums: 1fr 1fr;
     justify-content: center;
+    margin-bottom: 50px;
 }
+
 
 /* Sasha second page end */
 

@@ -73,7 +73,6 @@ header .navbar-nav {
 @media (min-width: 620px) {
     .banner {
     display: flex;
-    flex-direction: column;
     }
 }
     

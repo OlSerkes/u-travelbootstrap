@@ -78,6 +78,8 @@ header .navbar-nav {
     
 .banner {
     justify-content: center;
+    }
+#banner {
     border-width: 10px;
     border-color: white;
     border-style: solid;

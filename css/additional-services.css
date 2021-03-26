@@ -68,16 +68,17 @@
     
 }   
 .formadd {
-    padding: 30px 40px;
+    padding: 25px 30px;
 }
 .form-control {
-        background-color:rgba(255, 255, 255, 0.1);                
-        margin-bottom: 15px;
-        padding-bottom: 15px;
+        background-color:rgba(255, 255, 255, 0.09);                
+        margin-bottom: 20px;
+        padding-bottom: 25px;
         position: relative;
-        
-}
-.form-control input {  
+}        
+
+.form-control input { 
+  background-color: rgba(255, 255, 255, 0.09); 
   display: block;
   width: 100%;  
   font-size: 14px;
@@ -90,18 +91,19 @@
   outline: 0;
 }
 
-.form-control.success input {
+.form-control.success {
   border-color: var(--success-color);
 }
 
-.form-control.error input {
+.form-control.error {
   border-color: var(--error-color);
-}
+  }
 
 .form-control small {
   color: var(--error-color);
   position: absolute;
-  bottom: 0;
+  padding-left: 12px;
+  bottom: 5px;
   left: 0;
   visibility: hidden;
 }

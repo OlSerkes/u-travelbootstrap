@@ -110,8 +110,11 @@
 
 .form-control.error small {
   visibility: visible;
+  background-size: cover;
+  display: flex;
   flex-direction: column;
-}
+  max-width: 100%;
+  }
 @media (min-width: 610px) {
     
      .formadd button {

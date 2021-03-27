@@ -9,6 +9,8 @@ body {
 :root {
     scroll-behavior: smooth;
     --itinerary-text-color:#FFFFFF;
+    --navbar-text-color: #f1c324;
+
 }
 
 header .tours-logo {
@@ -44,21 +46,22 @@ header .tours-logo {
 .header-tourslogo {
     font-size: 25px;
     font-weight: 700;
-    color: #fff;
+    color: var(--itinerary-text-color);
     font-family: Dosis, sans-serif;
     }
 .logo img{
     width: 100px;
     height: 100px;
 }
-.header-tourslogotwo {
+a .header-tourslogotwo {
     font-size: 19px;
     font-weight: 500;
-    color: #fff;
+    color: var(--itinerary-text-color);
     font-family: Dosis, sans-serif;
+    text-decoration: underline;
     }
 header .container-fluid {
-    color: #f1c324;
+    color: var(--navbar-text-color);
     font-size: 16px;
     font-weight: 700;
     font-family: Roboto, sans-serif;
@@ -66,9 +69,13 @@ header .container-fluid {
 
 header .navbar-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex: 1;
 }
+a .nav-link {
+    color: var(--navbar-text-color);
+}
+
 
 @media (min-width: 620px) {
     .banner {
@@ -81,9 +88,10 @@ header .navbar-nav {
     }
 #banner {
     border-width: 10px;
-    border-color: #fff;
+    border-color: var(--itinerary-text-color);
     border-style: solid;
     margin-bottom: 50px;
+    max-width: 100%;
     }
 
 /* Sasha second page end */

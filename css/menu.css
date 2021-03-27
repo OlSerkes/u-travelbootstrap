@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --itinerary-text-color:#FFFFFF;
+}
+
+header .tours-logo {
+    background-image: url(../img/bcgd-chornobyl.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    }
+
+@media (min-width: 620px) {
+    .main-line {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 801px) {
+    .main-line {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.main-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    }
+
+.header-tourslogo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    font-family: Dosis, sans-serif;
+    }
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+.header-tourslogotwo {
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    font-family: Dosis, sans-serif;
+    }
+/* The Modal (background)*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 20%;
+    overflow: auto;
+    background-color: #fff;
+}
+/*Modal content/Box*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(15, 15, 15);
+}

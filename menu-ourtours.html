@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U-tours</title>
-    <link rel="stylesheet" href="css/our-tours-header.css">
+    <link rel="stylesheet" href="css/menu.css">
     <menu></menu>
 
 </head>
@@ -19,31 +19,51 @@
                 <div class="header-tourslogotwo"><a href="#email">U-tours@email.com</a></div>
             </div>
             <!--Menu-->
-            <ul class="menu">
-                <!--Modal for dropdown-menu-->
-                <button id="myBtn">Open Modal</button>
-                <div id="myModal" class="modal">
-                <li><a class="nav-link" href="index.html#additionalservices">Our Tours</a></li>
-                <!--Modal content-->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p><ul>
-                    <li><a class="nav-link" href="index.html#additionalservices">Our Tours</a></li>
-                    <li><a class="nav-link" href="index.html#additionalservices">Nature Tourism</a></li>
-                    <li><a class="nav-link" href="index.html#additionalservices">Services</a></li>
-                </ul></p>
+            <button class="burger-icon" id="burger-checkbox">☰</button>
+            <input type="checkbox" id="burger-checkbox">
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Our Tours</button>
+                    <div class="dropdown-content">
+                        <a href="our-tours.html">City-Tours</a>
+                        <a href="index.html#our-tours">Nature Tourism</a>
+                        <a href="index.html#our-tours">Extreme Tours</a>
+                    </div>
                 </div>
+                <a href="index.html#additionalservices">Services</a>
+                <a href="index.html#customers-text-block-egypt">Reviews</a>
+                <a href="index.html">About Us</a>
+                <a href="index.html#contacts">Contacts</a>
+            </div>
+            <!--Modal icon-->
+            <div id="menuModal" class="modalourtours">
+                <div class="modal-content-menu">
+                    <div class="headermenumodal">
+                        <button class="closebutton" id="closebtnmodalmenu"></button>
+                        <div class="modal-content-menu-ourtours">
+                            <div class="dropdown">
+                                <button class="dropbtn">Our Tours</button>
+                                <div class="dropdown-content">
+                                    <a href="our-tours.html">City-Tours</a>
+                                    <a href="index.html#our-tours">Nature Tourism</a>
+                                    <a href="index.html#our-tours">Extreme Tours</a>
+                                </div>
+                            </div>
+                            <a href="index.html#additionalservices">Services</a>
+                            <a href="index.html#customers-text-block-egypt">Reviews</a>
+                            <a href="index.html">About Us</a>
+                            <a href="index.html#contacts">Contacts</a>
+                            <br>
+                            <div class="header-tourslogo">Tours in Ukraine</div>
+                            <br>
+                            <div class="header-tourslogotwo"><a href="#email">U-tours@email.com</a></div>
+                        </div>
+                    </div>
                 </div>
-                
-                <li><a class="nav-link" href="index.html#additionalservices">Services</a></li>
-                <li><a class="nav-link" href="index.html#customers-text-block-egypt">Reviews</a></li>
-                <li><a class="nav-link" href="index.html">About Us</a></li>
-                <li><a class="nav-link" href="index.html#contacts">Contacts</a></li>
-            </ul>
-        </div>
-        </nav>
-    </header>
+            </div>
 
+    </header>
+    <script src="js/dropdown-modal.js"></script>
 </body>
 
 </html>

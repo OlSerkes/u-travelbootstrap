@@ -2,9 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
     scroll-behavior: smooth;
+    --form-control-color: rgba(255, 255, 255, 0.09);
     --success-color: #23be04;
     --error-color: #f50a0a;
 }
+/*Check wiev*/
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+/*Check wiev*/
+
 .wanttotravel-lviv {
     background-color: black;
     background-size: cover;
@@ -28,7 +36,7 @@
 }
 .want-to-travel {
     background-color: rgba(255, 255, 255, 0.09);
-    padding: 40px;
+    padding: 15px;
     margin: 0 50px 0 50px;
     align-items: center;
 }
@@ -61,7 +69,7 @@
      .form-control {
          
          display: flex;
-         justify-content: space-around;         
+         justify-content: center;       
          text-align: center;
          flex: 1;
      }
@@ -69,16 +77,19 @@
 }   
 .formadd {
     padding: 25px 30px;
-}
+    }
 .form-control {
-        background-color:rgba(255, 255, 255, 0.09);                
-        margin-bottom: 20px;
-        padding-bottom: 25px;
+        width: 100%;
+        background-color: var(--form-control-color);
+        border-color: var(--form-control-color);
+        margin-bottom: 20px;                    
+        padding-bottom: 15px;
         position: relative;
 }        
 
 .form-control input { 
-  background-color: rgba(255, 255, 255, 0.09); 
+  background-color: var(--form-control-color);
+  border-color: var(--form-control-color); 
   display: block;
   width: 100%;  
   font-size: 14px;
@@ -103,6 +114,7 @@
   color: var(--error-color);
   position: absolute;
   padding-left: 12px;
+  top: 30px;
   bottom: 5px;
   left: 0;
   visibility: hidden;
@@ -134,8 +146,7 @@
     font-weight: 700;
     font-family: Roboto, sans-serif;
     text-align: center; 
-    padding: 10px;
-    margin-top: 20px;
+    padding: 10px;    
     width: 100%;
     }
 .yellow-box-button :hover {    

@@ -2,6 +2,8 @@ const formadd = document.querySelector('#formadd');
 const name = document.querySelector('#name');
 const phoneNumber = document.querySelector('#phonenumber');
 const email = document.querySelector('#email');
+//Modal for submit
+const submitButton = document.querySelector(".modal-form input[type=submit");
 
 // Show input error message
 function showError(input, message) {

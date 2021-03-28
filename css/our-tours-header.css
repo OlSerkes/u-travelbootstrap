@@ -17,6 +17,7 @@ header .tours-logo {
     background-image: url(../img/bcgd-chornobyl.jpg);
     background-size: cover;
     background-position: center;
+    max-width: 100%;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -53,16 +54,18 @@ header .tours-logo {
     width: 100px;
     height: 100px;
 }
-a .header-tourslogotwo {
+.header-tourslogotwo {
     font-size: 19px;
     font-weight: 500;
     color: var(--itinerary-text-color);
     font-family: Dosis, sans-serif;
     text-decoration: underline;
     }
-header .container-fluid {
-    color: var(--navbar-text-color);
-    font-size: 16px;
+.header-tourslogotwo :hover {
+    text-decoration: underline;
+}
+header .container-fluid {    
+    font-size: 20px;
     font-weight: 700;
     font-family: Roboto, sans-serif;
 }
@@ -72,8 +75,10 @@ header .navbar-nav {
     justify-content: center;
     flex: 1;
 }
-a .nav-link {
-    color: var(--navbar-text-color);
+.navbar-dark,
+.navbar-nav,
+.nav-link {
+    color: var(--navbar-text-color) !important;    
 }
 
 

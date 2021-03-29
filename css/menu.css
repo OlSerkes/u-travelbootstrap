@@ -63,7 +63,8 @@ header .tours-logo{
     color: #fff;
     font-family: Dosis, sans-serif;
     }
-/* Modal window */
+    /*Menu*/
+   /* Modal window */
 .open-btn {
     padding: 10px 30px;
     font-size: 25px;
@@ -199,4 +200,32 @@ button:focus {
   }
 }
 /* Modal window */
+
+header .navbar {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+header .navbar a {
+    color: #f1c324;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+@media (max-width: 700px) {
+    .logo-header {
+        display: none;
+    }
+    .nav-item a {
+         display: none;
+    }
+  }
+  header .navbar :hover {
+      color: white;
+  }
   
+  .navbar .dropdown-menu a {
+      color: #000000;
+  }

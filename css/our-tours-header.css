@@ -34,14 +34,14 @@ header .background-header svg path {
   fill: #fdc2ff;
 }
 
-/*header .tours-logo {
+header .tours-logo {
     background-position: center;
     max-width: 100%;
     min-height: 200px;
     display: flex;
     flex-direction: column;
     }
-*/
+
 
 @media (min-width: 620px) {
     .main-line {

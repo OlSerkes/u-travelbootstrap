@@ -31,7 +31,7 @@ header .background-header svg {
     width: 100%;
 }
 header .background-header svg path {
-  fill: #fff;
+  fill: #fdc2ff;
 }
 
 /*header .tours-logo {
@@ -148,6 +148,7 @@ header .navbar-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
+    padding-bottom: 135px;
 }
 @media (min-width: 420px) {
     .product-list {
@@ -172,3 +173,62 @@ header .navbar-nav {
 
 
 /*Tanya Tkach second page end*/
+/*Taras start*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#itinerary {
+    padding: 90px 24px 70px 24px;
+    background-image: url(../img/itinerary.png);
+    background-size: cover;
+}
+
+.h-itinerary {
+    text-align: center;
+    padding: 22px;
+    font-family: Dosis, sans-serif;
+    font-size: 34px;
+    color: var(--itinerary-text-color);
+}
+
+.itinerary-day {
+    font-family: Dosis, sans-serif;
+    font-size: 22px;
+    color: var(--itinerary-text-color);
+}
+
+.itinerary-description {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    color: var(--itinerary-text-color);
+}
+
+.itinerary-img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 701px;
+    max-height: 598px;
+    min-height: 231px;
+    min-width: 272px;
+}
+
+@media (min-width:800px) {
+    article {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+    }
+}
+
+article>div {
+    padding-left: 30px;
+}
+
+.h-itinerary {
+    font-size: 48px;
+}
+
+/*Taras end*/

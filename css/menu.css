@@ -18,15 +18,7 @@ header .background-content {
     background-image: url(../img/bcgd-chornobyl.jpg);
     background-size: cover;
     }
-header .background-header svg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-header .background-header svg path {
-  fill: #fff;
-}
+
 header .tours-logo{
     background-position: center;
     max-width: 100%;
@@ -71,98 +63,50 @@ header .tours-logo{
     color: #fff;
     font-family: Dosis, sans-serif;
     }
-
-/*CSS for menu*/
-
-.burger-icon {
-    font-size: 35px;
-    font-weight: 400;
-    color: #fff;
-    margin-left: 25px;
+/* Modal window */
+.open-btn {
+    padding: 10px 30px;
+    font-size: 25px;
 }
-
-header .navbar {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    background: solid;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: Roboto, sans-serif;
+@media (min-width: 610px) {
+    .open-btn {
+        display: none;
+    } 
 }
-.navbar a {
-  float: left;
-  color: #f1c324;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  color: #f1c324;
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: #f1c324;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  border-radius: 2px;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  font-weight: 400;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/*Modal CSS*/
 button,
-input [type = "submit"] {
-    background-color: solid;
-    color: black;
-    cursor: pointer;
+input[type='submit'] {
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 12px;
 }
 button:focus {
-    outline: none;
+  outline: none;
 }
-.modalourtours {
-    background-color: rgba(0, 0, 0, 0.9);
-    display: none;
-    position: fixed;
-    display: block;
-}
-.modalourtours.show-modal {
-  display: block;
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
 }
 
-.modal-contant-menu {
-  background-color: var(--secondary-color);
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+.modal-nav-menu {
+  background-color: black;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -177,15 +121,19 @@ button:focus {
   animation-duration: var(--modal-duration);
 }
 
-.headermenumodal {
-  background: var(--secondary-color);
-  color: #fff;
+.modal-menu {
+  background: black;
+  color:white;
   padding: 50px;;
 }
 
-.closebutton {
+.modal-menu img {
+    height: 90px;
+    width: 90px;
+}
+.close-btn {
     font-size: 35px;
-    color: var(--main-color);
+    color: white;
     text-decoration: none;
     background: transparent;
     font-size: 25px;
@@ -196,34 +144,50 @@ button:focus {
     padding-right: 30px;
 }
 
-.closebutton:hover {
-    text-shadow: 0px 0px 10px #f33a3a;
+
+.modal-content-nav-menu {
+  padding: 20px;
+}
+
+.main-nav-menu a {
+    color: #f1c324;
+    font-size: 18px;
+    font-family: Roboto;
+    text-decoration: none;
     font-weight: bold;
 }
-
-.modal-content-menu-ourtours {
-  padding: 20px;
-  background-color: var(--primary-color);
+.main-nav-menu li {
+    list-style: none;
+    line-height: 3;
+}
+.main-nav-menu li :hover {
+    color: white;
+    cursor: pointer;
 }
 
-.modal-content-menu-ourtours a {
-    color: var(--menu-color);
-    font-size: 17px;
-    font-family: var(--main-font-family);
-    text-decoration: none;
-    font-weight: bolder;
+.btn-contacts a::after {
+    content: "   →";
+    color: white;
 }
 
+.btn-contacts a {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--main-color);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: var(--main-color);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
 
-.modal-content-menu-ourtours {
+.main-nav-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0%;
-    color: #fff;
     padding-left: 50px;
 }
-
 
 @keyframes modalopen {
   from {
@@ -234,3 +198,5 @@ button:focus {
     opacity: 1;
   }
 }
+/* Modal window */
+  

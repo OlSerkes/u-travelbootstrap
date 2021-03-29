@@ -2,6 +2,9 @@ const formadd = document.querySelector('#formadd');
 const name = document.querySelector('#name');
 const phoneNumber = document.querySelector('#phonenumber');
 const email = document.querySelector('#email');
+//Send message to the server
+//const submitButton = document.querySelector('.formadd input[type=submit]');
+//submitButton.addEventListener('click', login);
 
 // Show input error message
 function showError(input, message) {
@@ -85,4 +88,24 @@ formadd.addEventListener('submit', function(e) {
     checkEmail(email);
     }
 
-});
+})
+
+
+
+//Send to server
+//async function login(ev) {
+   // ev.preventDefault();
+    //await fetch('login', {
+       // method: 'POST',
+        //headers: {
+         //   'Content-Type': 'application/json'
+       // },
+       // body: JSON.stringify({
+          //  name: document.querySelector('.formadd input[name=name]').value,
+           // phoneNumber: document.querySelector('.formadd input[name=phonenumber]').value,
+           // email: document.querySelector('.formadd input[name=email]').value,
+
+       // })
+    //})
+    //document.querySelector('.formadd').reset();
+//}

@@ -80,7 +80,6 @@ header .tours-logo {
     font-weight: 500;
     color: var(--itinerary-text-color);
     font-family: Dosis, sans-serif;
-    text-decoration: underline;
     }
 .header-tourslogotwo :hover {
     text-decoration: underline;

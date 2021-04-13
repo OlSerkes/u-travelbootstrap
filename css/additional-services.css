@@ -80,8 +80,8 @@ body {
     }
 .form-control {
         width: 100%;
-        background-color: var(--form-control-color);
-        border-color: var(--form-control-color);
+        background-color: transparent;
+        border-color: none;
         margin-bottom: 20px;                    
         padding-bottom: 15px;
         position: relative;
